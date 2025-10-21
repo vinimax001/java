@@ -1,4 +1,4 @@
-package br.com.vinicius.entities;
+package br.com.java.estudos.poo.aulas.aula003.src.main.java.br.com.vinicius.entities;
 
 public class Triangle {
     public double a;

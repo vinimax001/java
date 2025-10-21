@@ -1,4 +1,4 @@
-package br.com.vinicius;
+package br.com.java.estudos.poo.aulas.aula003.src.main.java.br.com.vinicius;
 
 import br.com.vinicius.entities.Triangle;
 import java.util.Locale;

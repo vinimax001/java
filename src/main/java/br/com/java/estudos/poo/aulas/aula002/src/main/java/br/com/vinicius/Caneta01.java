@@ -1,6 +1,6 @@
 package br.com.vinicius;
 
-public class Caneta {
+public class Caneta01 {
 
     //ATRIBUTOS
     public String modelo;
@@ -9,7 +9,7 @@ public class Caneta {
     public boolean tampada;
 
     //metodo costrutor
-    public Caneta(){
+    public Caneta01(){
         this.setModelo("Bic");
         this.setPonta(1.5f);
         this.setCor("Preta");

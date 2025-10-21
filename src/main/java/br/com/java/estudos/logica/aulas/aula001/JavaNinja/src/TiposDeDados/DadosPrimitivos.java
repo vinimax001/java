@@ -2,7 +2,7 @@ package TiposDeDados;
 
 public class DadosPrimitivos {
     public static void main(String[] args) {
-        int idade = 2147483657;
+        int idade = 214748365;
         double altura = 1.65;
         char initial = 'N';
         boolean vivoOuMorto = true;
