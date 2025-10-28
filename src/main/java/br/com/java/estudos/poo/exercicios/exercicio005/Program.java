@@ -10,6 +10,7 @@ public class Program {
 
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
+        Account account;
 
         System.out.print("Enter account number: ");
         int accountNumber = sc.nextInt();
@@ -20,14 +21,13 @@ public class Program {
 
         System.out.print("Is there na initial deposit (y/n)? ");
         char resp = sc.next().charAt(0);
-        double balance = 0;
         if (resp == 'y' || resp == 'Y') {
             System.out.print("Enter initial deposit value: ");
-            balance = sc.nextDouble();
+            double initialDeposit = sc.nextDouble();
+            account = new Account(accountNumber, accountHolder, initialDeposit);
+        } else {
+            account = new Account(accountNumber, accountHolder);
         }
-
-        //INSTANCIANDO OBJETO Account
-        Account account = new Account(accountNumber, accountHolder, balance);
 
         System.out.println();
         System.out.println("Account data:");

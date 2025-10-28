@@ -9,32 +9,42 @@ public class Account {
     private String holderName;
     private double balance;
 
-    //CONSTRUTOR
-    public Account(int accountNumber, String holderName, double balance) {
+    //CONSTRUTORES
+    public Account(int accountNumber, String holderName) {
         this.accountNumber = accountNumber;
         this.holderName = holderName;
-        this.balance = balance;
+    }
+    public Account(int accountNumber, String holderName, double initialDeposit) {
+        this.accountNumber = accountNumber;
+        this.holderName = holderName;
+        deposit(initialDeposit);
 
     }
+
+    public int getAccountNumber(){
+        return accountNumber;
+    }
+
+    public String getHolderName(){
+        return holderName;
+    }
+
+    public void setHolderName(String holderName){
+        this.holderName = holderName;
+    }
+
     public double getBalance(){
         return balance;
-    }
-
-    public void setBalance(double balance){
-        this.balance = balance;
     }
 
     //METODOS
 
     public void deposit(double amount) {
-        this.balance += amount;
+        balance += amount;
     }
 
     public void withdraw(double amount) {
-        amount += 5;
-        if (balance >= amount) {
-            this.balance -= amount;
-        }
+        balance -= amount + 5.00;
     }
 
     public String toString() {
