@@ -11,12 +11,12 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Qual o valor do dólar: ");
+        System.out.print("What is the dollar price: ");
         double dolar = sc.nextDouble();
-        System.out.print("Quantos dólares serão comprados? ");
+        System.out.print("How many dollars will be bought? ");
         double quant = sc.nextDouble();
         double result = CurrencyConverter.converter(dolar, quant);
-        System.out.printf("Valor a ser pago em reais = R$ %.2f%n", result);
+        System.out.printf("Amount to be paid in reais = R$ %.2f%n", result);
 
         sc.close();
     }
