@@ -15,18 +15,18 @@ public class Program {
         int n = sc.nextInt();
 
         double sum = 0.0;
-        Product[] product = new Product[n];
-        for (int i = 0; i < product.length; i++) {
+        Product[] vect = new Product[n];
+        for (int i = 0; i < vect.length; i++) {
             sc.nextLine();
             System.out.print("Enter the product name: ");
             String name = sc.nextLine();
             System.out.print("Enter the product price: ");
             double price = sc.nextDouble();
-            product[i] = new Product(name, price);
-            sum += product[i].getPrice();
+            vect[i] = new Product(name, price);
+            sum += vect[i].getPrice();
         }
 
-        double avg = sum / product.length;
+        double avg = sum / vect.length;
 
         System.out.println("Average price: " + String.format("%.2f", avg));
 
