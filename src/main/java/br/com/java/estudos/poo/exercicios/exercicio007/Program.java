@@ -28,5 +28,6 @@ public class Program {
         System.out.printf("SUM = %.2f%n", sum);
         System.out.printf("AVERAGE = %.2f%n", sum / vect.length);
 
+        sc.close();
     }
 }
