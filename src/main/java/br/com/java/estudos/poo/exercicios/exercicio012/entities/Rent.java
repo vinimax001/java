@@ -5,6 +5,9 @@ public class Rent {
     private String name;
     private String email;
 
+    public Rent() {
+    };
+
     public Rent(String name, String email) {
         this.name = name;
         this.email = email;
@@ -26,4 +29,10 @@ public class Rent {
         this.email = email;
     }
 
+    @Override
+    public String toString() {
+        return getName()
+        + ", "
+        + getEmail();
+    }
 }

@@ -17,6 +17,7 @@ public class Program {
         int n  = sc.nextInt();
 
         for (int i = 0; i < n; i++) {
+            System.out.println();
             System.out.println("Rent #" + (i + 1) + ":");
             sc.nextLine();
             System.out.print("Name: ");
@@ -32,7 +33,7 @@ public class Program {
         System.out.println("Busy rooms:");
         for (int i = 0; i < rents.length; i++) {
             if (rents[i] != null) {
-                System.out.println( i + ": " + rents[i].getName() + ", " + rents[i].getEmail());
+                System.out.println( i + ": " +  rents[i]);
             }
         }
 

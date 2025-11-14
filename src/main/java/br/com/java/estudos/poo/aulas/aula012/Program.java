@@ -10,5 +10,13 @@ public class Program {
         System.out.println(x);
         System.out.println(y * 2);
 
+        System.out.println("---------------------------------------");
+
+        String[] vect = new String[] {"Maria", "Bob", "Alex"};
+
+        for(String s: vect){
+            System.out.println(s);
+        }
+
     }
 }
