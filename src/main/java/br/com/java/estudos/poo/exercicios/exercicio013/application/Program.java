@@ -25,6 +25,12 @@ public class Program {
             System.out.print("ID: ");
             int id = sc.nextInt();
             sc.nextLine();
+
+            while(hasId(list, id)){
+                System.out.println("Id already taken! Try again: ");
+                id = sc.nextInt();
+            };
+
             System.out.print("Name: ");
             String name = sc.nextLine();
             System.out.print("Salary: ");
